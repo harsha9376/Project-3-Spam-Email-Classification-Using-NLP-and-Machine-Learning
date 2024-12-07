@@ -6,14 +6,12 @@
 
 <h2>Software Requirements of the project</h2>
 
-<p>
-1) <b>Python 3.x:</b> The programming language used for data analysis.
-2) <b>NumPy:</b> For numerical data operations and array manipulation.
-3) <b>Pandas:</b> For data importing and cleaning
-4) <b>NPL:</b> For text pre-processing
-5) <b>Scikit-learn:</b> For text encoding and model selection
-6) <b>Jupyter Notebook:</b> Python IDE
-</p>
+<p>1) <b>Python 3.x:</b> The programming language used for data analysis.</p>
+<p>2) <b>NumPy:</b> For numerical data operations and array manipulation.</p>
+<p>3) <b>Pandas:</b> For data importing and cleaning</p>
+<p>4) <b>NPL:</b> For text pre-processing</p>
+<p>5) <b>Scikit-learn:</b> For text encoding and model selection</p>
+<p>6) <b>Jupyter Notebook:</b> Python IDE</p>
 
 <h3>Execution Process of the project</h3>
 
@@ -21,44 +19,44 @@
 The execution process for this project using the Naive Bayes algorithm typically involves several key steps, from data collection to model evaluation. Below is a structured outline of the process:
 
 ### 1. Problem Definition
-   -> **Define the objective:** to classify emails as "spam" or "ham" (non-spam).
-   -> Identify the specific requirements and constraints of the project.
+   <p><b>Define the objective:</b> to classify emails as "spam" or "ham" (non-spam).
+   <p>Identify the specific requirements and constraints of the project.
 
 ### 2. Data Collection
-   -> **Dataset Acquisition**: Collect a dataset of emails that are labeled as spam or non-spam. Commonly used datasets include the Enron dataset or the SpamAssassin dataset.
-   -> **Data Format**: Ensure the dataset is in a suitable format (e.g., CSV, JSON) for processing.
+   <p><b>Dataset Acquisition:</b> Collect a dataset of emails that are labeled as spam or non-spam. Commonly used datasets include the Enron dataset or the SpamAssassin dataset.
+    <p><b>Data Format:</b> Ensure the dataset is in a suitable format (e.g., CSV, JSON) for processing.
 
-### 3. **Data Preprocessing**
-   -> **Text Cleaning**: Clean the email content by removing HTML tags, special characters, punctuation, and numbers.
-   -> **Tokenization**: Split the text into individual words or tokens.
-   -> **Lowercasing**: Convert all text to lowercase to ensure uniformity.
-   -> **Stop Word Removal**: Remove common words (e.g., "the", "is", "on") that do not contribute much meaning.
-   -> **Stemming/Lemmatization**: Reduce words to their base or root form (optional).
+### 3. Data Preprocessing
+   <p><b>Text Cleaning:</b> Clean the email content by removing HTML tags, special characters, punctuation, and numbers.
+   <p><b>Tokenization:</b> Split the text into individual words or tokens.
+   <p><b>Lowercasing:</b> Convert all text to lowercase to ensure uniformity.
+   <p><b>Stop Word Removal:</b> Remove common words (e.g., "the", "is", "on") that do not contribute much meaning.
+   <p><b>Stemming/Lemmatization:</b> Reduce words to their base or root form (optional).</p>
 
-### 4. **Feature Extraction**
-    -> Convert text data into numerical form .
-    >> **Techinques** :
-     ->> **Bag of Words**: Represents text as a frequency count of words.
-     ->> **TF-IDF (Term Frequency-Inverse Document Frequency)**: Weighs the importance of words by considering their frequency in the document relative to their frequency across all documents.
+<h3>4. Feature Extraction</h3>
+    <p><b>Feature Extraction:</b>Convert text data into numerical form.
+       <p><b>>>Techniques:</b></p>
+<p><b>(i)Bag of Words:</b> Represents text as a frequency count of words.
+<p><b>(ii)TF-IDF (Term Frequency-Inverse Document Frequency):</b> Weighs the importance of words by considering their frequency in the document relative to their frequency across all documents
+    
 
 ### 5. **Model Training**
-   -> **Naive Bayes Classifier**: Choose an appropriate Naive Bayes variant (e.g., Multinomial Naive Bayes or Bernoulli Naive Bayes).
-   -> **Train the Model**: Use the training dataset to fit the Naive Bayes model, which calculates the probabilities of the input features given each class (spam or ham).
-   -> **Parameter Tuning**: Tune hyperparameters if necessary (though Naive Bayes typically requires less tuning than other algorithms).
+   <p><b>Naive Bayes Classifier:</b> Choose an appropriate Naive Bayes variant (e.g., Multinomial Naive Bayes or Bernoulli Naive Bayes).
+   <p><b>Train the Model:</b> Use the training dataset to fit the Naive Bayes model, which calculates the probabilities of the input features given each class (spam or ham).
+   <p><b>Parameter Tuning:</b> Tune hyperparameters if necessary (though Naive Bayes typically requires less tuning than other algorithms).
 
 ### 6. **Model Evaluation**
-   -> **Predict on the Test Set**: Use the trained model to classify the emails in the test set.
-   -> **Evaluation Metrics**: Assess the model’s performance using metrics such as:
-     ->> **Accuracy**: The proportion of correctly classified emails.
-     ->> **Precision**: The proportion of true positives among all predicted positives (spam).
-     ->> **Recall (Sensitivity)**: The proportion of true positives among all actual positives.
-     ->> **F1 Score**: The harmonic mean of precision and recall, useful for imbalanced datasets.
-     ->> **Confusion Matrix**: Visual representation of true positives, false positives, true negatives, and false negatives.
+   <p><b>Predict on the Test Set:</b> Use the trained model to classify the emails in the test set.
+   <p><b>Evaluation Metrics:</b> Assess the model’s performance using metrics such as:
+   <p><b>Accuracy:</b> The proportion of correctly classified emails.
+   <p><b>Precision:</b> The proportion of true positives among all predicted positives (spam).
+   <p><b>Recall (Sensitivity):</b> The proportion of true positives among all actual positives.
+   <p><b>F1 Score:</b> The harmonic mean of precision and recall, useful for imbalanced datasets.
+   <p><b>Confusion Matrix:</b> Visual representation of true positives, false positives, true negatives, and false negatives.
 
 ### 7. **Model Deployment**
-   -> Deploy the model in an application or system that integrates with existing email platforms to classify incoming emails in real-time.
-   -> Consider creating a user interface that allows users to view results or manage spam filters.
-   </p>
+   <p>Deploy the model in an application or system that integrates with existing email platforms to classify incoming emails in real-time.
+   <p>Consider creating a user interface that allows users to view results or manage spam filters.</p>
 
 
    ### Awesome Coding ! 
