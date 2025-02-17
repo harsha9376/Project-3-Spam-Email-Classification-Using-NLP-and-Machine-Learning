@@ -1,9 +1,18 @@
-import streamlit as st
+import os
 import pickle
+import streamlit as st
 
-# Load the model and vectorizer
-model = pickle.load(open('spam123.pkl', 'rb'))
-cv = pickle.load(open('vec123.pkl', 'rb'))
+# File paths
+model_file = 'spam123.pkl'
+vectorizer_file = 'vec123.pkl'
+
+# Check if the files exist
+if os.path.exists(model_file) and os.path.exists(vectorizer_file):
+    model = pickle.load(open(model_file, 'rb'))
+    cv = pickle.load(open(vectorizer_file, 'rb'))
+else:
+    st.error("Model or vectorizer file not found. Please check the file paths.")
+    st.stop()  # Stop the execution if files are missing
 
 # Define the main function for the app
 def main():
